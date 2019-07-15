@@ -1,7 +1,7 @@
 {
   "expo": {
-    "name": "Sin Hielo",
-    "slug": "sinhielo",
+    "name": "ICE Auxilio",
+    "slug": "ice-auxilio",
     "privacy": "public",
     "sdkVersion": "33.0.0",
     "platforms": [
@@ -13,9 +13,9 @@
     "orientation": "portrait",
     "icon": "./assets/icon.png",
     "splash": {
-      "image": "./assets/splash.png",
+      "image": "./assets/icon.png",
       "resizeMode": "contain",
-      "backgroundColor": "#ffffff"
+      "backgroundColor": "#E19F4A"
     },
     "updates": {
       "fallbackToCacheTimeout": 0

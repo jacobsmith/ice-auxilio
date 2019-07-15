@@ -3,6 +3,7 @@ import { View, TouchableOpacity } from 'react-native';
 import BText from 'src/components/BText';
 import ChooseAdventureSlide from './chooseAdventureSlide';
 
+
 const screens = [
     {
         key: 'at-your-door',
@@ -10,14 +11,14 @@ const screens = [
         spanishHeader: 'ICE está a la puerta.',
         bullet: '1',
         englishInstruction: 'Do not open the door.',
-        spanishInstruction: 'No abre la puerta.',
+        spanishInstruction: 'No le abra la puerta.',
         englishQuestion: 'Ask them: Are you Police or Immigration?',
-        spanishQuestion: 'Preguntelos: Están policia o inmigración? (Are you police or immigration?)',
+        spanishQuestion: 'Pregúntales si son la policía o inmigración. ("Are you police or immigration?")',
         answers: [
             {
                 id: 'police',
                 englishText: 'Police',
-                spanishText: 'Policia',
+                spanishText: 'Policía',
                 transitionsTo: 'police.1'
             },
             {
@@ -31,22 +32,22 @@ const screens = [
     {
         key: 'immigration.1',
         englishHeader: 'They are immigration.',
-        spanishHeader: '',
+        spanishHeader: 'Son agentes de inmigración.', 
         bullet: '2',
         englishInstruction: 'Do not open the door.',
-        spanishInstruction: '',
+        spanishInstruction: 'No abras la puerta.',
         englishQuestion: 'Immigration does not have the right to enter your home unless you open the door or give them permission. Do not open the door. Do not give them permission to enter.',
-        spanishQuestion: '',
+        spanishQuestion: 'Los agentes de inmigración no tienen el derecho de entrar a tu casa si no abres la puerta o si no das permiso. No abras la puerta. No les des permiso para entrar.',
     },
     {
         key: 'police.1',
         englishHeader: 'They say they are police.',
-        spanishHeader: '',
+        spanishHeader: 'Dicen que son la policía.',
         bullet: '2',
         englishInstruction: 'Ask to see the search warrant.',
-        spanishInstruction: '',
+        spanishInstruction: 'Pide ver la orden de registro.',
         englishQuestion: 'Is it signed by a judge? Look for "Judge" near the signature.',
-        spanishQuestion: '',
+        spanishQuestion: '¿Es el documento firmado por un juez ("judge")? Busca "Judge" cerca de la firma',
         answers: [
             {
                 englishText: 'Yes',
@@ -62,12 +63,12 @@ const screens = [
     {
         key: 'police.2',
         englishHeader: 'They say they are police.',
-        spanishHeader: '',
+        spanishHeader: 'Dicen que son la policía.',
         bullet: '3',
         englishInstruction: 'Ask to see the search warrant.',
-        spanishInstruction: '',
+        spanishInstruction: 'Pide ver la orden de registro.',
         englishQuestion: 'Does it say in detail who they are looking for?',
-        spanishQuestion: '',
+        spanishQuestion: '¿Dice la orden a quién buscan?',
         answers: [
             {
                 englishText: 'Yes',
@@ -84,12 +85,12 @@ const screens = [
     {
         key: 'police.3',
         englishHeader: 'They say they are police.',
-        spanishHeader: '',
+        spanishHeader: 'Dicen que son la policía.',
         bullet: '4',
         englishInstruction: 'Ask to see the search warrant.',
-        spanishInstruction: '',
+        spanishInstruction: 'Pide ver la orden de registro.',
         englishQuestion: 'Is it a search warrant?',
-        spanishQuestion: '',
+        spanishQuestion: 'Hay una orden de registro?',
         answers: [
             {
                 englishText: 'Yes',
@@ -106,32 +107,32 @@ const screens = [
     {
         key: 'arrestWarrant',
         englishHeader: 'They say they are police.',
-        spanishHeader: '',
+        spanishHeader: 'Dicen que son la policía',
         bullet: '5',
         englishInstruction: 'Do not open the door.',
-        spanishInstruction: '',
+        spanishInstruction: 'No abras la puerta',
         englishQuestion: 'An arrest warrant does not allow police to enter your home. The person listed on the arrest warrant could be arrested when leaving the home, however. Contact legal help immediately.',
-        spanishQuestion: '',
+        spanishQuestion: 'Una orden de registro no da la policía permiso entrar a tu casa. Pero la persona notada en la orden puede ser arrestada si salga de la casa. Llama a un abogado/consejo legal inmediatamente.',
     },
     {
         key: 'allowedToEnter',
         englishHeader: 'They are legally allowed to enter your home. Remain calm.',
-        spanishHeader: '',
+        spanishHeader: 'Legalmente tienen el derecho de entrar a tu casa. Mantén la calma.',
         bullet: '',
         englishInstruction: 'Tell them that you have not given consent for a search.',
-        spanishInstruction: '',
+        spanishInstruction: 'Díles que no has dado tu consentimiento para un registro. "I have not given consent for a search".',
         englishQuestion: 'Write down the name and badge number of each officer.',
-        spanishQuestion: '',
+        spanishQuestion: 'Apunta el nombre y el número de la placa de cada policía.',
     },
     {
         key: 'notAllowedToEnter',
         englishHeader: 'They are not allowed to legally enter your home.',
-        spanishHeader: '',
+        spanishHeader: 'Legalmente no tienen el derecho de entrar a tu casa.',
         bullet: '',
         englishInstruction: 'Remain calm and do not open the door.',
-        spanishInstruction: '',
+        spanishInstruction: 'Mantén la calma y no abras la puerta',
         englishQuestion: 'Seek additional legal counsel.',
-        spanishQuestion: '',
+        spanishQuestion: 'Consulta con un abogado',
     }
 ];
 
