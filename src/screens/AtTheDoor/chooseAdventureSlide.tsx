@@ -33,7 +33,11 @@ class ChooseAdventureSlide extends React.Component<Props> {
                 <BText center fontSize={ 20 } style={{ marginBottom: 20 }}>{ data[language + 'Question'] }</BText>
                 {
                     data.answers && data.answers.map((answer) => {
-                        return <BButton key={ answer.transitionsTo } style={{ marginBottom: 20 }} title={ answer[language + 'Text'] } onPress={ () => this.props.transitionTo(answer.transitionsTo) } />
+                        return (
+                            <View style={{ marginBottom: 20 }}>
+                                <BButton key={ answer.transitionsTo } title={ answer[language + 'Text'] } onPress={ () => this.props.transitionTo(answer.transitionsTo) } />
+                            </View>
+                        );
                     })
                 }
             </View>

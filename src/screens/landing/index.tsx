@@ -19,7 +19,9 @@ class LandingScreen extends React.Component {
                         <BText center fontSize={24}>Cada persona merece la dignidad.</BText>
                     </View>
 
-                    <BButton title='English' onPress={() => this.props.navigation.navigate('AtTheDoor', { language: 'english' })} style={{ marginBottom: 20 }} />
+                    <View style={{ marginBottom: 20 }}>
+                        <BButton title='English' onPress={() => this.props.navigation.navigate('AtTheDoor', { language: 'english' })} />
+                    </View>
                     <BButton title='Español' onPress={() => this.props.navigation.navigate('AtTheDoor', { language: 'spanish' })} />
                 </View>
 

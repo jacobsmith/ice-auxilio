@@ -90,7 +90,7 @@ const screens = [
         englishInstruction: 'Ask to see the search warrant.',
         spanishInstruction: 'Pide ver la orden de registro.',
         englishQuestion: 'Is it a search warrant?',
-        spanishQuestion: 'Hay una orden de registro?',
+        spanishQuestion: 'Es una orden de registro?',
         answers: [
             {
                 englishText: 'Yes',
@@ -112,7 +112,7 @@ const screens = [
         englishInstruction: 'Do not open the door.',
         spanishInstruction: 'No abras la puerta',
         englishQuestion: 'An arrest warrant does not allow police to enter your home. The person listed on the arrest warrant could be arrested when leaving the home, however. Contact legal help immediately.',
-        spanishQuestion: 'Una orden de registro no da la policía permiso entrar a tu casa. Pero la persona notada en la orden puede ser arrestada si salga de la casa. Llama a un abogado/consejo legal inmediatamente.',
+        spanishQuestion: 'Una orden de arresto no le da a la policía permiso para entrar a tu casa. Pero la persona notada en la orden puede ser arrestada si salga de la casa. Llama a un abogado/consejo legal inmediatamente.',
     },
     {
         key: 'allowedToEnter',
