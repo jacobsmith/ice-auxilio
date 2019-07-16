@@ -12,6 +12,8 @@ Currently, the app walks users through what to do in the event ICE and/or police
 Screenshots
 ===
 
+<img src="https://raw.githubusercontent.com/jacobsmith/ice-auxilio/master/docs/screenshots/landing.png" width="250" />
+
 ![landing](docs/screenshots/landing.png)
 ![at-the-door](docs/screenshots/at-the-door.png)
 ![immigration](docs/screenshots/immigration.png)
