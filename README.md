@@ -5,6 +5,17 @@ This app is a reference app for people going through immigration proceedings.
 
 It is built on top of React Native utilizing the [Expo](https://expo.io) platform in order to deliver new content quickly and easily to individuals.
 
+Functionality
+===
+Currently, the app walks users through what to do in the event ICE and/or police arrive at their home. Users answer a series of yes or no questions that help guide the legal actions they can take (such as refusing entry without proper warrants, etc.).
+
+Screenshots
+===
+
+![landing](docs/screenshots/landing.png)
+![at-the-door](docs/screenshots/at-the-door.png)
+![immigration](docs/screenshots/immigration.png)
+
 Personal Note
 ===
 
