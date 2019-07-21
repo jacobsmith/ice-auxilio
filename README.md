@@ -12,9 +12,11 @@ Currently, the app walks users through what to do in the event ICE and/or police
 Screenshots
 ===
 
+<div style="display: flex; flex-direction: row; justify-content: space-around">
 <img src="https://raw.githubusercontent.com/jacobsmith/ice-auxilio/master/docs/screenshots/landing.png" width="250" />
 <img src="https://raw.githubusercontent.com/jacobsmith/ice-auxilio/master/docs/screenshots/at-the-door.png" width="250" />
 <img src="https://raw.githubusercontent.com/jacobsmith/ice-auxilio/master/docs/screenshots/immigration.png" width="250" />
+  </div>
 
 Personal Note
 ===
