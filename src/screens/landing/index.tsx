@@ -1,12 +1,12 @@
 import React from 'react';
-import { StyleSheet, View } from 'react-native';
+import { StyleSheet, View, Linking, TouchableOpacity } from 'react-native';
 import BText from 'src/components/BText';
 import BButton from 'src/components/BButton';
 
 class LandingScreen extends React.Component {
     render() {
         return (
-            <View style={{ flex: 1 }}>
+            <View style={{ flex: 1, padding: 20 }}>
                 <View style={styles.container}>
                     <View style={{ marginBottom: 40 }}>
                         <BText center fontSize={28}>Every life is valuable.</BText>
@@ -25,6 +25,10 @@ class LandingScreen extends React.Component {
                     <BButton title='Español' onPress={() => this.props.navigation.navigate('AtTheDoor', { language: 'spanish' })} />
                 </View>
 
+                <TouchableOpacity onPress={ () => Linking.openURL('https://informedimmigrant.com') }>
+                    <BText style={{ alignSelf: 'flex-end', marginBottom: 20 }}>All content is taken from https://informedimmigrant.com. Please click here to view more of their information.</BText>
+                </TouchableOpacity>
+                
                 <BText style={{ alignSelf: 'flex-end', marginBottom: 20 }}>This app is provided AS IS and does not constitute legal advice. This app is designed as a reference aid. Please speak to legal counsel about your particular situation.</BText>
             </View>
         );
